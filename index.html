@@ -34,12 +34,44 @@
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vestibulum sed arcu non odio euismod lacinia at. Quis hendrerit dolor magna eget est lorem ipsum dolor. Pellentesque nec nam aliquam sem et. Cursus sit amet dictum sit amet justo. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Mauris sit amet massa vitae. Vulputate sapien nec sagittis aliquam malesuada bibendum. Eu ultrices vitae auctor eu augue ut lectus arcu. Blandit libero volutpat sed cras ornare arcu dui vivamus. Integer malesuada nunc vel risus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Mauris ultrices eros in cursus turpis massa tincidunt.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links"onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links"onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab"id="skills">
+                            <ul><li><span>C++</span><br>Certified Entry Level Programmer</li></ul>
+                            <ul><li><span>O365</span><br>Very familiar with Office 365 applications</li></ul>
+                            <ul><li><span>C++</span><br>Certified Entry Level Programmer</li></ul>
+
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul><li><span>UE5</span><br>Developed a Video game with a group</li></ul>
+                            <ul><li><span>WMed</span><br>Worked in the IT department</li></ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul><li><span>2022</span><br>Diploma from Gull Lake Highschool</li></ul>
+                            <ul><li><span>2023</span><br>AA from Kalamazoo Valley Community College</li></ul>
+                        </div>
                     </div>
                 
                 </div>
             </div>
         </div>
         </div>
-    
+ <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function openTab(tabName){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabName).classList.add("active-tab")
+    }
+ </script>
 </body>
 </html>
