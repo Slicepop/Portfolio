@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -267,15 +268,19 @@ nav ul li a:hover::after{
     transition:.5s;
 }
 .btn:hover{
-    background: #cf98db;
+    background: #b32bf2;
 
 }
 /*  Contact me  */
 .contact-left{
     flex-basis: 35%;
+    width: max-content;
 }
 .contact-right{
     flex-basis: 60%;
+    width: 100%;
+    margin-top: 90px;
+
 }
 .contact-left p{
     margin-top: 30px;
@@ -285,7 +290,7 @@ nav ul li a:hover::after{
 .social-icons a{
     text-decoration: none;
     color: #d6c4da;
-    font-size: 18px;
+    font-size: 15px;
     transition: .5s;
 }
 .social-icons a:hover{
@@ -295,4 +300,47 @@ nav ul li a:hover::after{
 .Socials {
     padding-top: 50px;
     list-style-type: none;
+}
+.btn.btn2{
+    background: #b32bf200;
+    width: 100px;
+    height: 50px;
+}.btn.btn2:hover{
+    background: #b32bf2;
+}
+.contact-right form{
+    width: 100%;
+    margin-top: px;
+}
+
+form input, form, textarea{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    height: auto;
+    border:0;
+    outline: none;
+    background:#b32bf250;
+    margin: 15px 0;
+    color: #d6c4da;
+    border-radius: 10px;
+}
+.containerS{
+    width: 92px;
+}
+::placeholder{
+    color: #d6c4da;   
+}.contact-content{
+    display: flex;
+}
+@media (max-width: 767px) {
+    .contact-content {
+      flex-direction: column;
+    }
+    
+    .contact-right {
+      margin-left: 0;
+      margin-top: 50px;
+    }
+    
   }
