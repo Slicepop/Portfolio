@@ -273,8 +273,8 @@ nav ul li a:hover::after{
 }
 /*  Contact me  */
 .contact-left{
-    flex-basis: 35%;
-    width: max-content;
+    flex-basis: 29%;
+    width: 25%;
 }
 .contact-right{
     flex-basis: 60%;
@@ -309,8 +309,8 @@ nav ul li a:hover::after{
     background: #b32bf2;
 }
 .contact-right form{
-    width: 100%;
-    margin-top: px;
+    margin-left: 40px;
+    width: 728px;
 }
 
 form input, form, textarea{
@@ -324,6 +324,7 @@ form input, form, textarea{
     margin: 15px 0;
     color: #d6c4da;
     border-radius: 10px;
+    resize: vertical;
 }
 .containerS{
     width: 92px;
@@ -333,14 +334,84 @@ form input, form, textarea{
 }.contact-content{
     display: flex;
 }
-@media (max-width: 767px) {
+form .btn2{
+
+    cursor:pointer;
+}
+nav.fa-solid.fa-bars.fa-2x{
+    display: none;
+}
+nav.fa-solid.fa-xmark.fa-2x{
+    display: none;
+}
+
+nav i#fas{
+    display: none;
+}
+@media (max-width: 889px) {
     .contact-content {
       flex-direction: column;
     }
-    
     .contact-right {
       margin-left: 0;
       margin-top: 50px;
     }
+    .header-text h1{
+        font-size:30px;
+    }
+    .header-text p{
+        font-size:25px;
+    }
+    .sub-title{
+        font-size: 45px;
+    }
+    .contact-right form {
+        margin-left: 10px;
+        width: 304px;
+    }
     
+    i.fa-solid.fa-bars.fa-2x {
+        padding-right: 20px;
+    } 
+    img #face{
+        padding-top: 10px;
+        width: auto;
+        height: 50%;
+    }
+    .about{
+        padding-top: 10px;
+        width: auto;
+        height: 50%;
+    }
+    
+    
+    nav ul{
+        transition: 1s;
+        background: #252525;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: auto;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+       display: block;
+       margin: 25px; 
+    }
+    
+    nav.fa-solid.fa-bars.fa-2x{
+        display: block;
+        position: fixed;
+    }
+    nav i#fas{
+        display: block;
+    }
+    nav ul #fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
   }

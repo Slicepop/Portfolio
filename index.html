@@ -13,15 +13,17 @@
         <div class="container">
             <nav>
                 <img src="images/Logo.png" class="Logo" alt="SlicepopLogo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i id= "fas" class="fa-solid fa-xmark fa-2x" style="color: #fff;" onclick = "closemenu()" ></i>
                 </ul>
+                <i id= "fas"class="fa-solid fa-bars fa-2x" style="color: #fff;" onclick = "openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>IT Team Assistant / Student</p>
+                <p>IT Team Assistant / CS Major</p>
                 <h1>Hello, my name is <span>Kaden</span><br> From Kalamazoo, MI</h1>
             </div>
         </div>
@@ -30,11 +32,11 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/Face1.jpg" alt="Kaden">
+                        <img src="images/Face1.jpg" id="face" alt="Kaden">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vestibulum sed arcu non odio euismod lacinia at. Quis hendrerit dolor magna eget est lorem ipsum dolor. Pellentesque nec nam aliquam sem et. Cursus sit amet dictum sit amet justo. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Mauris sit amet massa vitae. Vulputate sapien nec sagittis aliquam malesuada bibendum. Eu ultrices vitae auctor eu augue ut lectus arcu. Blandit libero volutpat sed cras ornare arcu dui vivamus. Integer malesuada nunc vel risus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Mauris ultrices eros in cursus turpis massa tincidunt.</p>
+                        <p class="AboutParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vestibulum sed arcu non odio euismod lacinia at. Quis hendrerit dolor magna eget est lorem ipsum dolor. Pellentesque nec nam aliquam sem et. Cursus sit amet dictum sit amet justo. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Mauris sit amet massa vitae. Vulputate sapien nec sagittis aliquam malesuada bibendum. Eu ultrices vitae auctor eu augue ut lectus arcu. Blandit libero volutpat sed cras ornare arcu dui vivamus. Integer malesuada nunc vel risus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Mauris ultrices eros in cursus turpis massa tincidunt.</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
                             <p class="tab-links" onclick="openTab('experience')">Experience</p>
@@ -43,8 +45,9 @@
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
                                 <li><span>C++</span><br>Certified Entry Level Programmer</li>
-                            <li><span>O365</span><br>Very familiar with Office 365 applications</li>
-                            <li><span>C++</span><br>Certified Entry Level Programmer</li></ul>
+                                <li><span>O365</span><br>Very familiar with Office 365 applications</li>
+                                <li><span>C++</span><br>Certified Entry Level Programmer</li>
+                            </ul>
 
                         </div>
                         <div class="tab-contents" id="experience">
@@ -53,7 +56,7 @@
                         </div>
                         <div class="tab-contents" id="education">
                             <ul><li><span>2022</span><br>Diploma from Gull Lake Highschool</li></ul>
-                            <ul><li><span>2023</span><br>AA from Kalamazoo Valley Community College</li></ul>
+                            <ul><li><span>2023</span><br>AA in General Studies from Kalamazoo Valley Community College</li></ul>
                         </div>
                     </div>
                 
@@ -70,21 +73,21 @@
                         <h2>C++</h2>
                         <p><br>Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vestibulum sed arcu non odio euismod lacinia at. Quis hendrerit dolor magna eget est lorem ipsum dolor. Pellentesque nec nam aliquam sem et. Cursus sit amet dictum sit amet justo. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Mauris sit amet massa vitae. Vulputate sapien nec sagittis aliquam malesuada bibendum. Eu ultrices vitae auctor eu augue ut lectus arcu. Blandit libero volutpat sed cras ornare arcu dui vivamus. Integer malesuada nunc vel risus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Mauris ultrices eros in cursus turpis massa tincidunt.  
                         </p>
-                        <a href='#'>Learn more</a>
+                        <a href='#' target="_blank">Learn more</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-gamepad fa-xl" style="color: #cc54d6;"></i>   
                         <h2>Video Game Design</h2>
                         <p><br>Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vestibulum sed arcu non odio euismod lacinia at. Quis hendrerit dolor magna eget est lorem ipsum dolor. Pellentesque nec nam aliquam sem et. Cursus sit amet dictum sit amet justo. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Mauris sit amet massa vitae. Vulputate sapien nec sagittis aliquam malesuada bibendum. Eu ultrices vitae auctor eu augue ut lectus arcu. Blandit libero volutpat sed cras ornare arcu dui vivamus. Integer malesuada nunc vel risus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Mauris ultrices eros in cursus turpis massa tincidunt.
                         </p>
-                        <a href='#'>Learn more</a>
+                        <a href='#' target="_blank">Learn more</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-window-maximize fa-xl" style="color: #cc54d6;"></i>
                         <h2>Web Development</h2>
                         <p><br>Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vestibulum sed arcu non odio euismod lacinia at. Quis hendrerit dolor magna eget est lorem ipsum dolor. Pellentesque nec nam aliquam sem et. Cursus sit amet dictum sit amet justo. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Mauris sit amet massa vitae. Vulputate sapien nec sagittis aliquam malesuada bibendum. Eu ultrices vitae auctor eu augue ut lectus arcu. Blandit libero volutpat sed cras ornare arcu dui vivamus. Integer malesuada nunc vel risus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Mauris ultrices eros in cursus turpis massa tincidunt.  
                         </p>
-                        <a href='#'>Learn more</a>
+                        <a href='#' target="_blank">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -116,13 +119,13 @@
                         <div class="layer">
                             <h3>Square that Moves</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                            <a href=""><i class="fa-brands fa-github fa-xl "style="color:#cc54d6"></i></a>
+                            <a href="" target="_blank"><i class="fa-brands fa-github fa-xl "style="color:#cc54d6"></i></a>
                         </div>
                     </div>
-                </div><a href="" class = "btn">See More</a>
+                </div><a href="" target="_blank" class = "btn">See More</a>
             </div>
         </div>
-        <!-- Portfolio-->
+        <!-- Contact Me-->
         <div class="contact">
             <div class="container">
                 <div class="contact-content">
@@ -131,13 +134,13 @@
                         <div class="containerS">
                             <div class="social-icons">
                                 <ul class="Socials">
-                                    <li><a href=""><i class="fa-brands fa-github fa-2x"style="color: #cc54d6"></i>  Github</a></li>
+                                    <li><a href="https://github.com/Slicepop" target="_blank"><i class="fa-brands fa-github fa-2x"style="color: #cc54d6"></i>  Github</a></li>
                                     <li><br></li>
-                                    <li><a href=""><i class="fa-solid fa-envelope fa-2x" style="color: #cc54d6;"></i>  Email</a></li>
+                                    <li><a href="mailto:kaden.seeger@gmail.com"><i class="fa-solid fa-envelope fa-2x" style="color: #cc54d6;"></i>  Email</a></li>
                                     <li><br></li>
-                                    <li> <a href=""><i class="fa-brands fa-linkedin fa-2x" style="color: #cc54d6;"></i>  Linkedin</a></li>
+                                    <li> <a href="https://www.linkedin.com/in/kaden-seeger-232a8a259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG4w2JmYfSrqZ%2FaTYpSmTpA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #cc54d6;"></i>  Linkedin</a></li>
                                     <li><br></li>
-                                    <li><a href=""><i class="fa-solid fa-download fa-2x" style="color: #cc54d6;"></i>  Resume</a></li>
+                                    <li><a href="images/Resume.pdf" download target="_blank"><i class="fa-solid fa-download fa-2x" style="color: #cc54d6;"></i>  Resume</a></li>
                                 </ul>
                                 
                             </div>
@@ -173,6 +176,16 @@
         }
         event.currentTarget.classList.add("active-link")
         document.getElementById(tabName).classList.add("active-tab")
+    }
+ </script>
+
+ <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0px"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
     }
  </script>
 </body>
