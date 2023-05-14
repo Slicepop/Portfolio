@@ -366,12 +366,12 @@ nav i#fas{
         font-size: 45px;
     }
     .contact-right form {
-        margin-left: 10px;
-        width: 304px;
+        margin: 8vw;
+        width: 75vw;
     }
     
     i.fa-solid.fa-bars.fa-2x {
-        padding-right: 20px;
+        padding-right: 3vw;
     } 
     img #face{
         padding-top: 10px;
