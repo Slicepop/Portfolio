@@ -336,7 +336,6 @@ form input, form, textarea{
     display: flex;
 }
 form .btn2{
-
     cursor:pointer;
 }
 nav.fa-solid.fa-bars.fa-2x{
@@ -348,6 +347,10 @@ nav.fa-solid.fa-xmark.fa-2x{
 
 nav i#fas{
     display: none;
+}
+#msg{
+    color: #252525;
+    display: block;
 }
 @media (min-width: 1400px) {
     img#face{
