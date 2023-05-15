@@ -14,10 +14,11 @@
             <nav>
                 <img src="images/Logo.png" class="Logo" alt="SlicepopLogo">
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i id= "fas" class="fa-solid fa-xmark fa-2x" style="color: #fff;" onclick = "closemenu()" ></i>
                 </ul>
                 <i id= "fas"class="fa-solid fa-bars fa-2x" style="color: #fff;" onclick = "openmenu()"></i>
@@ -126,11 +127,11 @@
             </div>
         </div>
         <!-- Contact Me-->
-        <div class="contact">
+        <div id="contact">
             <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
                 <div class="contact-content">
                     <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
                         <div class="containerS">
                             <div class="social-icons">
                                 <ul class="Socials">
@@ -145,12 +146,9 @@
                                 
                             </div>
                         </div>
-                        
-                        
-    
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name = "submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="text" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -182,11 +180,23 @@
  <script>
     var sidemenu = document.getElementById("sidemenu");
     function openmenu(){
-        sidemenu.style.right = "0px"
+        sidemenu.style.right = "0px";
     }
     function closemenu(){
         sidemenu.style.right = "-200px";
+        
     }
  </script>
+ <script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbxewtpPjUSR9bSV6QxAidh9dWpj48YoWTqaxI1bvDdsoB2AE1P-jKUH7pO97NcRJ5u1/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>

@@ -23,6 +23,9 @@
     background: #b42bf2;
     border-radius: 100px;
   }
+  html{
+    scroll-behavior: smooth;
+  }
 body{
     background: #080808;
     color: #fff;
@@ -48,8 +51,9 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
+.Logo{
     width: 140px;
+    border-radius: 5px;
 }
 nav ul li{
     display: inline-block;
@@ -97,15 +101,17 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
-    flex-basis: 35%;
-}
+
+
 .about-col-1 img{
-    width: auto;
+    width: 30vw;
+    height: auto;
     border-radius: 15px;
 }
 .about-col-2{
+    margin-left: 10px;
     flex-basis: 60%;
+    width: 5vw;
 }
 .sub-title{
     color: #fff;
@@ -273,18 +279,13 @@ nav ul li a:hover::after{
 }
 /*  Contact me  */
 .contact-left{
-    flex-basis: 29%;
-    width: 25%;
+    width: fit-content;
 }
 .contact-right{
-    flex-basis: 60%;
-    width: 100%;
-    margin-top: 90px;
-
-}
-.contact-left p{
-    margin-top: 30px;
     
+    width: 100%;
+    margin-top: 40px;
+
 }
 
 .social-icons a{
@@ -309,8 +310,8 @@ nav ul li a:hover::after{
     background: #b32bf2;
 }
 .contact-right form{
-    margin-left: 40px;
-    width: 728px;
+    margin-left: 15vw;
+    width: 60vw;
 }
 
 form input, form, textarea{
@@ -348,6 +349,12 @@ nav.fa-solid.fa-xmark.fa-2x{
 nav i#fas{
     display: none;
 }
+@media (min-width: 1400px) {
+    img#face{
+        width: auto;
+        
+    }
+}
 @media (max-width: 889px) {
     .contact-content {
       flex-direction: column;
@@ -357,42 +364,47 @@ nav i#fas{
       margin-top: 50px;
     }
     .header-text h1{
-        font-size:30px;
+        font-size:6.5vw;
     }
     .header-text p{
         font-size:25px;
     }
     .sub-title{
-        font-size: 45px;
+        font-size: 8vw;
     }
     .contact-right form {
         margin: 8vw;
         width: 75vw;
     }
-    
+    .AboutParagraph{
+        width: 55vw;
+    }
     i.fa-solid.fa-bars.fa-2x {
         padding-right: 3vw;
     } 
-    img #face{
-        padding-top: 10px;
-        width: auto;
-        height: 50%;
-    }
+
     .about{
         padding-top: 10px;
         width: auto;
         height: 50%;
     }
+    img#face{
+        width: 50vw;
+        
+    }
     
-    
+    .about-col-2{
+        width: 20vw;
+    }
     nav ul{
         transition: 1s;
-        background: #252525;
+        background: linear-gradient(#080808,#080808,#601b802f);
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -150px;
+        width: 150px;
         height: auto;
+        border-radius: 8px;
         padding-top: 50px;
         z-index: 2;
     }
