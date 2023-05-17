@@ -4,8 +4,8 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 p{
-    overflow: auto;
     line-height: 1.35em;
     color: #d6c4da;
     font-size: 16px;
@@ -68,7 +68,7 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin:  0px 35px
+    margin:  0px 2vw
 }
 nav ul li a{
     color: #fff;
@@ -373,7 +373,9 @@ nav i#fas{
         
     }
 }
-@media (max-width: 889px) {
+
+
+@media (max-width: 662px) {
     .contact-content {
       flex-direction: column;
     }
@@ -400,7 +402,15 @@ nav i#fas{
     i.fa-solid.fa-bars.fa-2x {
         padding-right: 3vw;
     } 
-
+    p.AboutParagraph{
+        height: 620px;
+        width: 85vw;
+        overflow: auto;
+    }
+    .layer .p{
+        overflow: auto;
+        
+    }
     .about{
         padding-top: 10px;
         width: auto;
@@ -410,7 +420,12 @@ nav i#fas{
         width: 50vw;
         
     }
-    
+    .tab-contents{
+        width: fit-content;
+    }
+    .tab-links{
+        margin-right: 4vw;
+    }
     .about-col-2{
         width: 20vw;
     }
