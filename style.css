@@ -5,11 +5,14 @@
     box-sizing: border-box;
 }
 p{
+    overflow: auto;
     line-height: 1.35em;
+    color: #d6c4da;
     font-size: 16px;
 }
 div.header-text p{
     font-size: 30px;
+    color: #fff;
 }
 
 /* width */
@@ -252,19 +255,24 @@ nav ul li a:hover::after{
     font-weight: 20px;
     margin-bottom: 20px;
 }
+
 .layer a{
+    padding-top: 2px;
     margin-top: 20px;
     text-decoration: none;
     font-size: 18px;
     line-height: 31px;
     background-color: #cf98db;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     text-align: center;
 }
+
+
 .work:hover img{
     transform: scale(1.2);
+    filter: blur(1.25px);
 
 }
 .work:hover .layer{
