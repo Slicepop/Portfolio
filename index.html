@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kaden Eportfolio</title>
+    <title>Kaden's Eportfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/99edd4be2a.js" crossorigin="anonymous"></script>
 </head>
@@ -37,7 +38,14 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p class="AboutParagraph">Hey I'm Kaden I have been working in IT at Western Michigan University School of Medicine for about a year now, I have administered the deployment of nearly 250 machines. I am a certified programmer that will be studying computer science at Western Governors University. I have been interested in computer science for 6 years. My experience ranges from technical support to computer programming. I would consider myself a lifelong learner as the tech field requires you to keep yourself up to date on the best practices and newest technologies.</p>
+                        <p class="AboutParagraph">
+                            Hi I'm Kaden, and I've been immersed in the world of IT at Western Michigan University School of Medicine for the past year. Throughout my employment, I've successfully managed the deployment of over 250 machines, showcasing my expertise in system administration.
+                            As a certified programmer, I'm thrilled to embark on my journey studying computer science at Western Governors University. My passion for the field of computer science has been cultivated over the course of six years, during which I've explored various aspects, ranging from technical support to computer programming.
+                            In my pursuit of excellence, I embrace the philosophy of being a lifelong learner. The ever-evolving nature of technology demands that I stay updated with the latest best practices and emerging technologies. This commitment to continuous growth enables me to contribute effectively within any team environment.
+                            My skill set encompasses a diverse range of programming languages, including HTML, CSS, JavaScript, C#, Java, Python, and C++. This versatility allows me to adapt to different projects and challenges, ensuring that I can deliver quality results.
+                            Above all, my greatest asset in any team setting is my unwavering determination to learn anything required to accomplish the task at hand. I thrive on expanding my knowledge and skill set, eagerly embracing new opportunities for personal and professional growth.
+                            Feel free to explore my e-portfolio and discover more about my journey in the world of IT and computer science!
+                        </p>
 
                             <div class="tab-titles">
                             <p class ="tab-links active-link" onclick="openTab('skills')">Skills</p>
@@ -48,7 +56,6 @@
                             <ul>
                                 <li><span>C++</span><br>Certified Entry Level Programmer</li>
                                 <li><span>O365</span><br>Very familiar with Office 365 applications</li>
-                                <li><span>C++</span><br>Certified Entry Level Programmer</li>
                             </ul>
 
                         </div>
@@ -73,7 +80,10 @@
                     <div>
                         <i class="fa-solid fa-laptop-code fa-xl"style="color: #cc54d6;"></i>                        
                         <h2>C++</h2>
-                        <p><br>In my junior year of high school I earned my C++ Certified Entry level certification (CPE) from the CPP institute. This certification covers: C++ Syntax, Literals and operators, Flow control, Functions, Vectors and pointers, String and string processing, and Structures. I have since expanded my knowledge even further by studying for the Associate level of the same program.</p>
+                        <p><br>During my junior year of high school, I achieved a significant milestone by obtaining the C++ Certified Entry Level certification (CPE) from the CPP Institute. This certification validates my proficiency in various fundamental aspects of C++ programming, including C++ syntax, literals and operators, flow control, functions, vectors and pointers, string and string processing, as well as structures.
+                            Driven by my passion for continuous learning, I have since gone beyond the entry level and dedicated myself to studying for the Associate level of the same program. This advanced level of certification allows me to delve deeper into the intricacies of C++ programming, expanding my knowledge and honing my skills even further.
+                            By pursuing these certifications and undertaking rigorous studies, I have fortified my foundation in C++ programming, empowering me to tackle complex coding challenges with confidence and precision.
+                        </p>
                         <a href='#' target="_blank">Learn more</a>
                     </div>
                     <div>
@@ -108,15 +118,15 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/Crosstown.jpg" width=45%  height= auto;>
+                        <img src="images/Code.PNG" width=45%  height= auto;>
                         <div class="layer">
-                            <h3>OSOF</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                            <a href=""><i class="fa-brands fa-github fa-xl "style="color:#cc54d6"></i></a>
+                            <h3>This Website</h3>
+                            <p>This website was a very big learning experience for me as it is my first website I have created and published.</p>
+                            <a href="https://github.com/Slicepop/Portfolio" target="_blank"><i class="fa-brands fa-github fa-xl "style="color:#cc54d6"></i></a>
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/Crosstown.jpg" width=45%  height= auto;>
+                        <img src="images/SquareThatMoves.PNG" width=45%  height= auto;>
                         <div class="layer">
                             <h3>Square that Moves</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
@@ -206,7 +216,7 @@
             },5000)
             form.reset()
         })
-        .catch(error => console.error('Error!', error.message))
+        .catch(error => msg.innerHTML = "Error!")
     })
   </script>
 </body>
