@@ -218,6 +218,9 @@ nav ul li a:hover::after{
     padding: 150px 0;
     color: #d6c4da;
 }
+.layer#weatherapp{
+    cursor:pointer;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));

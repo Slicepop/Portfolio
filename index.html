@@ -139,11 +139,11 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/SquareThatMoves.PNG" width=45%  height= auto; alt="Code of Square that Moves">
-                        <div class="layer">
-                            <h3>Square that Moves</h3>
-                            <p>This is an app that I worked on in High School with my friend the Back-End is in Java and the Front-End is in XML. Unfortunatley the repository is lost so all I have is this video. </p>
-                            <a href="https://www.youtube.com/watch?v=p11d3wgsDHM&ab_channel=KadenSeeger" target="_blank"><i class="fa-brands fa-youtube fa-xl "style="color:#cc54d6"></i></a>
+                        <img src="images/WeatherAPP.PNG" width=45%  height= auto; alt="Code of Square that Moves">
+                        <div class="layer" id="weatherapp" onclick="Weatherappclick()">
+                            <h3>Weather App</h3>
+                            <p>This was my first time using an API. HTML, CSS, JS </p>
+                            <a href="https://github.com/Slicepop/WeatherSite" target="_blank"><i id="weather" class="fa-brands fa-github fa-xl"style="color:#cc54d6"></i></a>
                         </div>
                     </div>
                 </div>
@@ -206,6 +206,16 @@
  </script>
 
  <script>
+     function Weatherappclick(){
+        const githubiconWeather = document.getElementById("weather")
+        if (event.target == (githubiconWeather)) {
+            
+        }else{
+            window.open("https://slicepop.github.io/WeatherSite/", '_blank');
+        }
+        
+    }
+
     var sidemenu = document.getElementById("sidemenu");
     function openmenu(){
         sidemenu.style.right = "0px";
