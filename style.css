@@ -116,8 +116,6 @@ nav ul li a:hover::after{
 
 
 .about-col-1 img{
-    width: 30vw;
-    height: auto;
     border-radius: 15px;
 }
 .about-col-2{
@@ -170,6 +168,42 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
     
+}
+.codeImages{
+   text-align: center;
+   margin-top: 20px;
+}
+.codeFlex{
+    align-items: center;
+    display: flex;
+}
+.codeLogo{
+    margin-top: 12px;
+    height: 65px;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+    outline-style: solid;
+    outline-color: rgba(255, 255, 255, 0.322);
+    background-color: rgba(225, 149, 248, 0.219);
+    margin-right: 20px;
+}
+.codeFlex img{
+    transition: .5s ease;
+}
+.codeFlex p{
+    transition: .5s ease;    
+    opacity: 0;
+}
+.codeFlex:hover img{
+    background-color: rgba(225, 149, 248, 0.568);
+
+}
+.codeFlex:hover p{
+     opacity: 1;
+}
+#jsIMG{
+    margin-left: 10px;
 }
 /*  Services  */
 #services{
