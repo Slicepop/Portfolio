@@ -197,6 +197,7 @@ nav ul li a:hover::after{
 }
 .codeFlex:hover img{
     background-color: rgba(225, 149, 248, 0.568);
+    scale: 1.125;
 
 }
 .codeFlex:hover p{
