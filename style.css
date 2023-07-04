@@ -105,7 +105,7 @@ nav ul li a:hover::after{
 }
 .arrowdown{
     text-align: center;
-    margin-top: 35vh;
+    margin-top: 40vh;
     
 }
 .arrowdown a{
@@ -122,7 +122,7 @@ nav ul li a:hover::after{
 
 /*  About Section  */
 #about{
-    margin-top: 15vh;
+    margin-top: 25vh;
     padding: 150px 0;
     color: #d6c4da;
 }
@@ -431,11 +431,13 @@ nav i#fas{
     color: #252525;
     display: block;
 }
-@media (min-height: 1100px) {
+@media (min-height: 350px) {
     .arrowdown{
-        margin-top: 55vh;
+        margin-top: 25vh;
+        
     }
 }
+
 
 @media (min-width: 1400px) {
     img#face{
