@@ -431,6 +431,12 @@ nav i#fas{
     color: #252525;
     display: block;
 }
+@media (min-height: 1400px) {
+    .arrowdown{
+        margin-top: 70vh;
+    }
+}
+
 @media (min-width: 1400px) {
     img#face{
         width: auto;
