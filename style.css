@@ -54,8 +54,6 @@ body{
 }
 .container{
     padding: 20px 10%;
-    
-
 }
 nav{
     display: flex;
@@ -103,8 +101,27 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #b42bf2;
 }
+.myTitle{
+    color: #ffffff71;   
+}
+.arrowdown{
+    margin-left: 50%;
+    margin-top: 35vh;
+    
+}
+.arrowdown a{
+    padding: 10px;
+    outline-style: solid;
+    text-decoration: none;
+    color: #ffffff71;
+    outline-color: #ffffff71;
+    border-radius: 50px;
+    cursor: pointer;   
+}
+
 /*  About Section  */
 #about{
+    margin-top: 40px;
     padding: 150px 0;
     color: #d6c4da;
 }
@@ -113,7 +130,10 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.programmingSkillsTitle{
+    color: white;
+    margin-top: 5px;
+}
 
 .about-col-1 img{
     border-radius: 15px;
