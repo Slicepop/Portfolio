@@ -26,13 +26,13 @@ div.header-text p{
   }
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #b42bf2;
+    box-shadow: inset 0 0 5px #b32bf244;
     border-radius: 10px;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #b42bf2;
+    background: #b32bf283;
     border-radius: 100px;
   }
   html{
@@ -46,7 +46,6 @@ body{
     background-size:auto;
     background-repeat: repeat-x;
     z-index: 2;
-
 }
 #header{
     width: 100%;
@@ -105,17 +104,20 @@ nav ul li a:hover::after{
     color: #ffffff71;   
 }
 .arrowdown{
-    margin-left: 50%;
+    text-align: center;
     margin-top: 35vh;
     
 }
 .arrowdown a{
-    padding: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
     outline-style: solid;
     text-decoration: none;
     color: #ffffff71;
-    outline-color: #ffffff71;
-    border-radius: 50px;
+    outline-color: #ffffff21;
+    border-radius: 100%;
 }
 
 /*  About Section  */
@@ -132,6 +134,9 @@ nav ul li a:hover::after{
 .programmingSkillsTitle{
     color: white;
     margin-top: 5px;
+}
+.about-col-1{
+    margin-bottom: 20px;
 }
 
 .about-col-1 img{
