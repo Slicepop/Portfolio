@@ -116,7 +116,6 @@ nav ul li a:hover::after{
     color: #ffffff71;
     outline-color: #ffffff71;
     border-radius: 50px;
-    cursor: pointer;   
 }
 
 /*  About Section  */
