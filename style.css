@@ -122,7 +122,7 @@ nav ul li a:hover::after{
 
 /*  About Section  */
 #about{
-    margin-top: 40px;
+    margin-top: 15vh;
     padding: 150px 0;
     color: #d6c4da;
 }
@@ -431,9 +431,9 @@ nav i#fas{
     color: #252525;
     display: block;
 }
-@media (min-height: 1400px) {
+@media (min-height: 1100px) {
     .arrowdown{
-        margin-top: 70vh;
+        margin-top: 55vh;
     }
 }
 
