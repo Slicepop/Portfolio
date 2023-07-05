@@ -6,7 +6,7 @@
 }
 
 p{
-    line-height: 1.35em;
+    line-height: 1.5em;
     color: #d6c4da;
     font-size: 16px;
 }
@@ -105,7 +105,7 @@ nav ul li a:hover::after{
 }
 .arrowdown{
     text-align: center;
-    margin-top: 40vh;
+    margin-top: 30vh;
     
 }
 .arrowdown a{
@@ -122,9 +122,12 @@ nav ul li a:hover::after{
 
 /*  About Section  */
 #about{
-    margin-top: 25vh;
+    margin-top: 30vh;
     padding: 150px 0;
     color: #d6c4da;
+}
+.AboutParagraph{
+    width: 50vw;
 }
 .row{
     display: flex;
@@ -431,9 +434,16 @@ nav i#fas{
     color: #252525;
     display: block;
 }
-@media (min-height: 350px) {
+@media (max-height: 800px) {
     .arrowdown{
-        margin-top: 25vh;
+        margin-top: 15vh;
+        
+    }
+}
+
+@media (min-height: 1130px) {
+    .arrowdown{
+        margin-top: 50vh;
         
     }
 }
