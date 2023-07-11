@@ -142,9 +142,7 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 
-.about-col-1 img{
-    border-radius: 15px;
-}
+
 .about-col-2{
     margin-left: 10px;
     flex-basis: 60%;
@@ -197,41 +195,45 @@ nav ul li a:hover::after{
     
 }
 .codeImages{
-   text-align: center;
-   margin-top: 20px;
+    font-weight: 50;
+    text-align: center;
+    margin-top: 20px;
 }
 .codeFlex{
     align-items: center;
     display: flex;
 }
-.codeLogo{
-    margin-top: 12px;
-    height: 65px;
-    width: auto;
+.logoBackground{
+    margin-bottom: 15px;
+    height: 70px;
+    width: 70px;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 20px;
     outline-style: solid;
     outline-color: rgba(255, 255, 255, 0.322);
     background-color: rgba(225, 149, 248, 0.219);
     margin-right: 20px;
 }
-.codeFlex img{
+.codeLogo{
+   height: 60px;
+   border-radius: 0px;
+}
+.codeFlex .logoBackground{
     transition: .5s ease;
 }
 .codeFlex p{
     transition: .5s ease;    
     opacity: 0;
 }
-.codeFlex:hover img{
+.codeFlex:hover .logoBackground{
     background-color: rgba(225, 149, 248, 0.568);
     scale: 1.125;
-
 }
 .codeFlex:hover p{
      opacity: 1;
 }
-#jsIMG{
-    margin-left: 10px;
+#js img{
+    border-radius: 13px;
 }
 /*  Services  */
 #services{
