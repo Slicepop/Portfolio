@@ -13,7 +13,6 @@
         <div id="header">
         <div class="container">
             <nav>
-                
                 <img src="images/Logo.png" class="Logo" alt="SlicepopLogo">
                 <ul id="sidemenu">
                     <li><a href="#about">About</a></li>
@@ -40,45 +39,52 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <h1 class="programmingSkillsTitle">Programming Skills</h>
+                        <div class="sillsDiv">
+                            <h1 class="programmingSkillsTitle">Programming Skills</h1>
+                            <label class="switch">
+                                <input type="checkbox" id ='check' onclick="setOpacity()">
+                                <span class="slider"></span>
+                            </label>
+
+                        </div>
                         <div class="codeImages">
                             <div class="codeFlex" id="csharp">
                                 <div class="logoBackground">
                                     <img class = 'codeLogo' src="images/c.png" alt="">
                                 </div>
-                                <p>Learned to make Windows applications in a college class</p>
+                                <p class = "codeDescription">Learned to make Windows applications in a college class</p>
                             </div>
                             <div class="codeFlex" id="cpp">
                                 <div class="logoBackground">
                                     <img class = 'codeLogo' src="images/cpp.png" alt="">
                                 </div>
-                                <p>Earned C++ entry-level certification</p>
+                                <p class = "codeDescription">Earned C++ entry-level certification</p>
                             </div>
                             <div id = 'jsIMG'class="codeFlex" id="java">
                                 <div class="logoBackground">
                                     <img class = 'codeLogo' src="images/java.png" alt="">
                                 </div>
-                                <p>Learned to make mobile applications notably a mobile game</p>
+                                <p class = "codeDescription">Learned to make mobile applications notably a mobile game</p>
 
                             </div>  
                             <div class="codeFlex" id="python">
                                 <div class="logoBackground">
                                     <img  class = 'codeLogo' src="images/python.png" alt="">
                                 </div>
-                                <p>Used to create small programs for small projects</p>
+                                <p class = "codeDescription">Used to create small programs for projects</p>
 
                             </div>
                             <div class="codeFlex" id="js">
                                 <div class="logoBackground">
                                     <img class = 'codeLogo' src="images/js.png" alt="">
                                 </div>
-                                <p>1 year of experience using JS</p>
+                                <p class = "codeDescription">1 year of experience using JS</p>
                             </div>
                             <div class="codeFlex" id="html">
                                 <div class="logoBackground">
                                     <img class = 'codeLogo' src="images/html.png" alt="">
                                 </div>
-                                <p>2 years of experience using HTML</p>
+                                <p class = "codeDescription">2 years of experience using HTML</p>
                             </div>
                         </div>
                     </div>
@@ -239,9 +245,7 @@
         event.currentTarget.classList.add("active-link")
         document.getElementById(tabName).classList.add("active-tab")
     }
- </script>
 
- <script>
      function Weatherappclick(){
         const githubiconWeather = document.getElementById("weather")
         if (event.target == (githubiconWeather)) {
@@ -260,9 +264,67 @@
         sidemenu.style.right = "-200px";
         
     }
- </script>
+
+
+
+
+
+
+    const toggleButton = document.querySelector('.switch input[type="checkbox"]');
+    const codeFlexElements = document.querySelectorAll('.codeFlex');
+
+    var flipflop = 0;
+    const codetext = document.getElementsByClassName('codeDescription');
+    function setOpacity(){
+        if(flipflop == 1){
+            flipflop = 0;
+            for (p of codetext){
+                p.style.opacity = 0;
+
+            }
+            
+        }else if (flipflop == 0){
+            flipflop = 1;
+            for (p of codetext){
+                p.style.opacity = 1;
+
+            }
+
+        }
+
+    }
  
- <script>
+    codeFlexElements.forEach((element) => {
+        element.addEventListener('mouseenter', handleMouseEnter);
+        element.addEventListener('mouseleave', handleMouseLeave);
+    });
+
+
+// Function to handle mouse enter event
+    function handleMouseEnter(event) {
+        const element = event.currentTarget;
+
+        // Check if the toggle button is off
+        if (!flipflop) {
+            element.querySelector('p').style.opacity = 1; 
+        }
+    }
+
+// Function to handle mouse leave event
+    function handleMouseLeave(event) {
+        const element = event.currentTarget;
+
+        // Check if the toggle button is off
+        if (flipflop == 0) {
+            element.querySelector('p').style.opacity = 0;
+        }
+    }
+
+
+
+
+
+
     const scriptURL = 'https://script.google.com/macros/s/AKfycby265LtsHJIqAg71MaEDgUW1ZgxaURW4vYKr9eNzd2-uYcwPhC1cFREixy5FIPdauwy/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
