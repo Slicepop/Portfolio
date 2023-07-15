@@ -127,12 +127,12 @@ nav ul li a:hover::after{
     color: #d6c4da;
 }
 .AboutParagraph{
-    width: 50vw;
+    width: 40vw;
 }
 .row{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+
 }
 /*  Slider Checkbox  */
 .sillsDiv{
@@ -149,7 +149,6 @@ nav ul li a:hover::after{
     position: relative;
     display: inline-block;
     scale: .65;
-    margin-left: 150px;
     width: 51px;
     height: 29px;
     box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 5px inset, rgba(0, 0, 0, 0.21) 0px 0px 0px 24px inset,
@@ -192,15 +191,15 @@ nav ul li a:hover::after{
     margin-top: 5px;
 }
 .about-col-1{
+    margin-right: 10px;
+    min-width: 520px;
+    width: 600px;
     margin-bottom: 20px;
-    
 }
 
 
 .about-col-2{
-    margin-left: 10px;
-    flex-basis: 60%;
-    width: 5vw;
+    margin-right: 0px;
 }
 .sub-title{
     color: #fff;
@@ -254,10 +253,12 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .codeFlex{
+    
     align-items: center;
     display: flex;
 }
 .logoBackground{
+    
     margin-bottom: 15px;
     height: 70px;
     width: 70px;
@@ -270,15 +271,16 @@ nav ul li a:hover::after{
 }
 .codeLogo{
    height: 60px;
-   border-radius: 0px;
 }
 .codeFlex .logoBackground{
-    transition: .5s ease;
+    transition: .75s ease; 
+    
 }
 .codeFlex p{
-    transition: .5s ease; 
+    transition: .75s ease;
     cursor:default;   
     opacity: 0;
+    margin-bottom: 13px;
     
 }
 .codeFlex:hover .logoBackground{
