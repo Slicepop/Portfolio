@@ -478,7 +478,7 @@ form input, form, textarea{
 form .btn2{
     cursor:pointer;
 }
-nav.fa-solid.fa-bars.fa-2x{
+.fa-bars{
     display: none;
 }
 nav.fa-solid.fa-xmark.fa-2x{
@@ -491,6 +491,14 @@ nav i#fas{
 #msg{
     color: #252525;
     display: block;
+}
+#fass{
+    display: none;
+    position: fixed;
+    padding-right: 10px;
+    top: 10;
+    right: 0 ;
+    color: rgba(255, 255, 255, 0.562);
 }
 @media (max-height: 800px) {
     .arrowdown{
@@ -590,6 +598,11 @@ nav i#fas{
     nav.fa-solid.fa-bars.fa-2x{
         display: block;
         position: fixed;
+    }
+
+    nav i#fass{
+        display: block;
+
     }
     nav i#fas{
         display: block;
