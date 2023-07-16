@@ -201,6 +201,9 @@ nav ul li a:hover::after{
 .about-col-2{
     margin-right: 0px;
 }
+.about-col-2 h1{
+    width: 300px;
+}
 .sub-title{
     color: #fff;
     font-size: 60px;
@@ -495,10 +498,9 @@ nav i#fas{
 #fass{
     display: none;
     position: fixed;
-    padding-right: 10px;
     top: 10;
-    right: 0 ;
-    color: rgba(255, 255, 255, 0.562);
+    margin-left: 70%;
+    color: rgba(255, 255, 255, 0.39);
 }
 @media (max-height: 800px) {
     .arrowdown{
