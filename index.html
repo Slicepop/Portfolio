@@ -1,342 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Kaden's Eportfolio</title>
-    <link rel="shortcut icon" type="image/png" href="Logo.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/99edd4be2a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-        <div id="header">
+    <link rel="shortcut icon" type="image/png" href="Logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/99edd4be2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Logo.png" class="Logo" alt="SlicepopLogo" />
+          <ul id="sidemenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              id="fas"
+              class="fa-solid fa-xmark fa-2x"
+              style="color: #fff"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i id="fass" class="fa-solid fa-bars fa-2x" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>IT Team Assistant / SWE Major</p>
+          <h1>Hello, my name is <span>Kaden</span></h1>
+          <h3 class="myTitle">Software Developer</h3>
+        </div>
+      </div>
+      <div class="arrowdown">
+        <a href="#about" class="fa-solid fa-arrow-down"></a>
+      </div>
+      <!--About Section-->
+
+      <div id="about">
         <div class="container">
-            <nav>
-                <img src="images/Logo.png" class="Logo" alt="SlicepopLogo">
-                <ul id="sidemenu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i id= "fas" class="fa-solid fa-xmark fa-2x" style="color: #fff;" onclick = "closemenu()" ></i>
+          <div class="row">
+            <div class="about-col-1">
+              <div class="sillsDiv">
+                <h1 class="programmingSkillsTitle">Programming Skills</h1>
+                <label class="switch">
+                  <input type="checkbox" id="check" onclick="setOpacity()" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="codeImages">
+                <div class="codeFlex" id="csharp">
+                  <div class="logoBackground">
+                    <img class="codeLogo" src="images/c.png" alt="" />
+                  </div>
+                  <p class="codeDescription">
+                    Learned to make Windows applications in a college class
+                  </p>
+                </div>
+                <div class="codeFlex" id="cpp">
+                  <div class="logoBackground">
+                    <img class="codeLogo" src="images/cpp.png" alt="" />
+                  </div>
+                  <p class="codeDescription">
+                    Earned C++ entry-level certification
+                  </p>
+                </div>
+                <div id="ReactIMG" class="codeFlex" id="react">
+                  <div class="logoBackground">
+                    <img
+                      class="codeLogo"
+                      src="images/reacticonpng.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="codeDescription">
+                    Basic knowledge of React, Made Task App
+                  </p>
+                </div>
+                <div id="jsIMG" class="codeFlex" id="java">
+                  <div class="logoBackground">
+                    <img class="codeLogo" src="images/java.png" alt="" />
+                  </div>
+                  <p class="codeDescription">
+                    Learned to make mobile applications notably a mobile game
+                  </p>
+                </div>
+                <div class="codeFlex" id="python">
+                  <div class="logoBackground">
+                    <img class="codeLogo" src="images/python.png" alt="" />
+                  </div>
+                  <p class="codeDescription">
+                    Used to create small programs for projects
+                  </p>
+                </div>
+                <div class="codeFlex" id="js">
+                  <div class="logoBackground">
+                    <img class="codeLogo" src="images/js.png" alt="" />
+                  </div>
+                  <p class="codeDescription">1 year of experience using JS</p>
+                </div>
+                <div class="codeFlex" id="html">
+                  <div class="logoBackground">
+                    <img class="codeLogo" src="images/html.png" alt="" />
+                  </div>
+                  <p class="codeDescription">
+                    2 years of experience using HTML
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p class="AboutParagraph">
+                &nbsp; &nbsp; &nbsp; &nbsp;Hi, I'm Kaden, and I've been immersed
+                in the world of IT at Western Michigan University School of
+                Medicine for the past year. Throughout my employment, As a
+                certified programmer, I'm thrilled to embark on my journey
+                studying computer science at Western Governors University. My
+                passion for the field of computer science has been cultivated
+                over six years, during which I've explored various aspects,
+                ranging from technical support to computer programming. In my
+                pursuit of excellence, I embrace the philosophy of being a
+                lifelong learner.
+                <br /><br />
+                &nbsp; &nbsp; &nbsp; &nbsp;The ever-evolving nature of
+                technology demands that I stay updated with the latest best
+                practices and emerging technologies. This commitment to
+                continuous growth enables me to contribute effectively within
+                any team environment. My skill set encompasses a diverse range
+                of programming languages, including HTML, CSS, JavaScript, C#,
+                Java, Python, and C++. This versatility allows me to adapt to
+                different projects and challenges, ensuring that I can deliver
+                quality results. Feel free to explore my e-portfolio and
+                discover more about my journey in the world of IT and computer
+                science!
+              </p>
+
+              <div class="tab-titles">
+                <p
+                  class="tab-links active-link"
+                  onclick="openTab('experience')"
+                >
+                  Experience
+                </p>
+                <p class="tab-links" onclick="openTab('education')">
+                  Education
+                </p>
+              </div>
+
+              <div class="tab-contents active-tab" id="experience">
+                <ul>
+                  <li>
+                    <span>UE5</span><br />Developed a Video game with a group
+                  </li>
                 </ul>
-                <i id= "fass"class="fa-solid fa-bars fa-2x"  onclick = "openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>IT Team Assistant / SWE Major</p>
-                <h1>Hello, my name is <span>Kaden</span></h1>
-                <h3 class="myTitle">Software Developer</h3>
+                <ul>
+                  <li><span>WMed</span><br />Works in the IT department</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2022</span><br />Diploma from Gull Lake Highschool
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <span>2023</span><br />AA in General Studies from Kalamazoo
+                    Valley Community College
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="arrowdown">
-            <a href="#about" class="fa-solid fa-arrow-down"></a>
+      </div>
 
+      <!--Services-->
+
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i
+                class="fa-solid fa-laptop-code fa-xl"
+                style="color: #cc54d6"
+              ></i>
+              <h2>C++</h2>
+              <p>
+                <br />During my junior year of high school, I achieved a
+                significant milestone by obtaining the C++ Certified Entry Level
+                certification (CPE) from the CPP Institute. This certification
+                validates my proficiency in various fundamental aspects of C++
+                programming, including C++ syntax, literals and operators, flow
+                control, functions, vectors and pointers, string and string
+                processing, as well as structures. Driven by my passion for
+                continuous learning, I have since gone beyond the entry level
+                and dedicated myself to studying for the Associate level of the
+                same program. This advanced level of certification allows me to
+                delve deeper into the intricacies of C++ programming, expanding
+                my knowledge and honing my skills even further. By pursuing
+                these certifications and undertaking rigorous studies, I have
+                fortified my foundation in C++ programming, empowering me to
+                tackle complex coding challenges with confidence and precision.
+              </p>
+            </div>
+            <div>
+              <i class="fa-solid fa-gamepad fa-xl" style="color: #cc54d6"></i>
+              <h2>Video Game Design</h2>
+              <p>
+                <br />
+                I have had the privilege of collaborating with a team to develop
+                two impressive video games. The first game, OSOF, is a
+                captivating horror experience where players must navigate a
+                maze, discover hidden keys, and outsmart a relentless monster to
+                escape. This project successfully captures the suspense and
+                thrill of survival horror, providing players with an immersive
+                and engaging gameplay. The second project was an ambitious
+                top-down game intended to be showcased to a contact at Riot
+                Games, a prominent name in the gaming industry. Unfortunately,
+                the team disbanded before we could finalize the game or present
+                it to our intended audience. While it was disappointing, this
+                experience taught me valuable lessons about teamwork, project
+                management, and the unpredictable nature of the industry. Both
+                game development experiences have significantly contributed to
+                my growth as a developer. They have sharpened my skills in game
+                design, programming, and collaborative problem-solving.
+                Moreover, these experiences have further ignited my passion for
+                creating captivating and innovative gaming experiences.
+              </p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-window-maximize fa-xl"
+                style="color: #cc54d6"
+              ></i>
+              <h2>Web Development</h2>
+              <p>
+                <br />
+                I created this website, leveraging the knowledge and skills I
+                gained from my introductory web development class at KVCC.
+                During the course, we focused on the fundamentals of web
+                development, including HTML and CSS. Additionally, I had the
+                chance to apply some JavaScript concepts in a project. Motivated
+                by my passion for web development, I embarked on a journey of
+                self-improvement and exploration. I sought out additional
+                resources, and this website is the result of my efforts to
+                expand my knowledge and skills in web development. Through the
+                process of designing and building this website, I have gained
+                valuable hands-on experience. I have further honed my
+                understanding of HTML, CSS, and JavaScript, while also exploring
+                more advanced concepts and techniques. This practical
+                application has allowed me to solidify my foundational knowledge
+                and gain confidence in my abilities as a web developer. I take
+                pride in the growth I have achieved through this personal
+                project, and I am excited to continue pushing my boundaries,
+                continually learning and improving as I navigate the
+                ever-evolving world of web development.
+              </p>
+            </div>
+          </div>
         </div>
-        <!--About Section-->
-        
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <div class="sillsDiv">
-                            <h1 class="programmingSkillsTitle">Programming Skills</h1>
-                            <label class="switch">
-                                <input type="checkbox" id ='check' onclick="setOpacity()">
-                                <span class="slider"></span>
-                            </label>
+      </div>
 
-                        </div>
-                        <div class="codeImages">
-                            <div class="codeFlex" id="csharp">
-                                <div class="logoBackground">
-                                    <img class = 'codeLogo' src="images/c.png" alt="">
-                                </div>
-                                <p class = "codeDescription">Learned to make Windows applications in a college class</p>
-                            </div>
-                            <div class="codeFlex" id="cpp">
-                                <div class="logoBackground">
-                                    <img class = 'codeLogo' src="images/cpp.png" alt="">
-                                </div>
-                                <p class = "codeDescription">Earned C++ entry-level certification</p>
-                            </div>
-                            <div id = 'jsIMG'class="codeFlex" id="java">
-                                <div class="logoBackground">
-                                    <img class = 'codeLogo' src="images/java.png" alt="">
-                                </div>
-                                <p class = "codeDescription">Learned to make mobile applications notably a mobile game</p>
+      <!--Portfolio-->
 
-                            </div>  
-                            <div class="codeFlex" id="python">
-                                <div class="logoBackground">
-                                    <img  class = 'codeLogo' src="images/python.png" alt="">
-                                </div>
-                                <p class = "codeDescription">Used to create small programs for projects</p>
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img
+                src="images/Horror_Game.png"
+                width="45%"
+                height="auto;"
+                alt="Picture of Crosstown"
+              />
+              <div class="layer">
+                <h3>OSOF</h3>
+                <p>
+                  This is a horror game developed in Unreal Engine 4 that I made
+                  with a friend.
+                </p>
+                <a
+                  href="https://github.com/ErrorCodeGameDevs/HorrorGame/tree/Development"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-github fa-xl"
+                    style="color: #cc54d6"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="images/TaskMe.PNG"
+                width="45%"
+                height="auto;"
+                alt="TaksME code image"
+              />
+              <div class="layer" id="todoarea" onclick="HandleTodoClick()">
+                <h3>TaskMe</h3>
+                <p>
+                  This is my first application utilizing the React JavaScript
+                  framework.
+                </p>
+                <a href="https://github.com/Slicepop/ToDo" target="_blank"
+                  ><i
+                    id="todo"
+                    class="fa-brands fa-github fa-xl"
+                    style="color: #cc54d6"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="images/WeatherAPP.PNG"
+                width="45%"
+                height="auto;"
+                alt="Code of Square that Moves"
+              />
+              <div class="layer" id="weatherapp" onclick="Weatherappclick()">
+                <h3>Weather App</h3>
+                <p>This was my first time using an API. HTML, CSS, JS</p>
+                <a
+                  href="https://github.com/Slicepop/WeatherSite"
+                  target="_blank"
+                  ><i
+                    id="weather"
+                    class="fa-brands fa-github fa-xl"
+                    style="color: #cc54d6"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                            </div>
-                            <div class="codeFlex" id="js">
-                                <div class="logoBackground">
-                                    <img class = 'codeLogo' src="images/js.png" alt="">
-                                </div>
-                                <p class = "codeDescription">1 year of experience using JS</p>
-                            </div>
-                            <div class="codeFlex" id="html">
-                                <div class="logoBackground">
-                                    <img class = 'codeLogo' src="images/html.png" alt="">
-                                </div>
-                                <p class = "codeDescription">2 years of experience using HTML</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p class="AboutParagraph">
-                            &nbsp; &nbsp; &nbsp; &nbsp;Hi, I'm Kaden, and I've been immersed in the world of IT at Western Michigan University School of Medicine for the past year. Throughout my employment, As a certified programmer, I'm thrilled to embark on my journey studying computer science at Western Governors University. My passion for the field of computer science has been cultivated over six years, during which I've explored various aspects, ranging from technical support to computer programming. In my pursuit of excellence, I embrace the philosophy of being a lifelong learner.
-                            <br><br>
-                            &nbsp; &nbsp; &nbsp; &nbsp;The ever-evolving nature of technology demands that I stay updated with the latest best 
-                            practices and emerging technologies. This commitment to continuous growth enables me to contribute effectively within any team environment. My skill set encompasses a diverse range of programming languages, including HTML, CSS, JavaScript, C#, Java, Python, and C++. This versatility allows me to adapt to different projects and challenges, ensuring that I can deliver quality results. Feel free to explore my e-portfolio and discover more about my journey in the world of IT and computer science!
-                            </p>
+      <!--Contact Me-->
 
-                            <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="openTab('experience')">Experience</p>
-                            <p class="tab-links" onclick="openTab('education')">Education</p>
-                        </div>
-                        
-                        <div class="tab-contents active-tab" id="experience">
-                            <ul><li><span>UE5</span><br>Developed a Video game with a group</li></ul>
-                            <ul><li><span>WMed</span><br>Works in the IT department</li></ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul><li><span>2022</span><br>Diploma from Gull Lake Highschool</li></ul>
-                            <ul><li><span>2023</span><br>AA in General Studies from Kalamazoo Valley Community College</li></ul>
-                        </div>
-                    </div>
+      <div id="contact">
+        <div class="container">
+          <h1 class="sub-title">Contact Me</h1>
+          <div class="contact-content">
+            <div class="contact-left">
+              <div class="containerS">
+                <div class="social-icons">
+                  <ul class="Socials">
+                    <li>
+                      <a href="https://github.com/Slicepop" target="_blank"
+                        ><i
+                          class="fa-brands fa-github fa-2x"
+                          style="color: #cc54d6"
+                        ></i>
+                        Github</a
+                      >
+                    </li>
+                    <li><br /></li>
+                    <li>
+                      <a href="mailto:kaden.seeger@gmail.com"
+                        ><i
+                          class="fa-solid fa-envelope fa-2x"
+                          style="color: #cc54d6"
+                        ></i>
+                        Email</a
+                      >
+                    </li>
+                    <li><br /></li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/kaden-seeger-232a8a259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG4w2JmYfSrqZ%2FaTYpSmTpA%3D%3D"
+                        target="_blank"
+                        ><i
+                          class="fa-brands fa-linkedin fa-2x"
+                          style="color: #cc54d6"
+                        ></i>
+                        Linkedin</a
+                      >
+                    </li>
+                    <li><br /></li>
+                    <li>
+                      <a
+                        href="images/Kaden-Seeger-Resume.pdf"
+                        download
+                        target="_blank"
+                        ><i
+                          class="fa-solid fa-download fa-2x"
+                          style="color: #cc54d6"
+                        ></i>
+                        Resume</a
+                      >
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-        </div>
-        
-        <!--Services-->
-        
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-laptop-code fa-xl"style="color: #cc54d6;"></i>                        
-                        <h2>C++</h2>
-                        <p><br>During my junior year of high school, I achieved a significant milestone by obtaining the C++ Certified Entry Level certification (CPE) from the CPP Institute. This certification validates my proficiency in various fundamental aspects of C++ programming, including C++ syntax, literals and operators, flow control, functions, vectors and pointers, string and string processing, as well as structures.
-                            Driven by my passion for continuous learning, I have since gone beyond the entry level and dedicated myself to studying for the Associate level of the same program. This advanced level of certification allows me to delve deeper into the intricacies of C++ programming, expanding my knowledge and honing my skills even further.
-                            By pursuing these certifications and undertaking rigorous studies, I have fortified my foundation in C++ programming, empowering me to tackle complex coding challenges with confidence and precision.
-                        </p>
-                        
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-gamepad fa-xl" style="color: #cc54d6;"></i>   
-                        <h2>Video Game Design</h2>
-                        <p><br>
-                            I have had the privilege of collaborating with a team to develop two impressive video games. The first game, OSOF, is a captivating horror experience where players must navigate a maze, discover hidden keys, and outsmart a relentless monster to escape. This project successfully captures the suspense and thrill of survival horror, providing players with an immersive and engaging gameplay.
-                            The second project was an ambitious top-down game intended to be showcased to a contact at Riot Games, a prominent name in the gaming industry. Unfortunately, the team disbanded before we could finalize the game or present it to our intended audience. While it was disappointing, this experience taught me valuable lessons about teamwork, project management, and the unpredictable nature of the industry.
-                            Both game development experiences have significantly contributed to my growth as a developer. They have sharpened my skills in game design, programming, and collaborative problem-solving. Moreover, these experiences have further ignited my passion for creating captivating and innovative gaming experiences.
-                        </p>
-                        
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-window-maximize fa-xl" style="color: #cc54d6;"></i>
-                        <h2>Web Development</h2>
-                        <p><br>
-                            I created this website, leveraging the knowledge and skills I gained from my introductory web development class at KVCC. During the course, we focused on the fundamentals of web development, including HTML and CSS. Additionally, I had the chance to apply some JavaScript concepts in a project.
-                            Motivated by my passion for web development, I embarked on a journey of self-improvement and exploration. I sought out additional resources, and this website is the result of my efforts to expand my knowledge and skills in web development.
-                            Through the process of designing and building this website, I have gained valuable hands-on experience. I have further honed my understanding of HTML, CSS, and JavaScript, while also exploring more advanced concepts and techniques. This practical application has allowed me to solidify my foundational knowledge and gain confidence in my abilities as a web developer.
-                            I take pride in the growth I have achieved through this personal project, and I am excited to continue pushing my boundaries, continually learning and improving as I navigate the ever-evolving world of web development.
-                            </p>
-                        
-                    </div>
-                </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                <span id="msg"></span>
+              </form>
             </div>
-        
+          </div>
         </div>
-
-        <!--Portfolio-->
-        
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/Horror_Game.png" width= 45%  height= auto; alt="Picture of Crosstown">
-                        <div class="layer">
-                            <h3>OSOF</h3>
-                            <p>This is a horror game developed in Unreal Engine 4 that I made with a friend.</p>
-                            <a href="https://github.com/ErrorCodeGameDevs/HorrorGame/tree/Development" target="_blank"><i class="fa-brands fa-github fa-xl "style="color:#cc54d6"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/Code.PNG" width=45%  height= auto; alt="e-portfolio code image">
-                        <div class="layer">
-                            <h3>This Website</h3>
-                            <p>This website was a very big learning experience for me as it is my first website I have created and published.</p>
-                            <a href="https://github.com/Slicepop/Portfolio" target="_blank" class="youtubeIcon"><i class="fa-brands fa-github fa-xl "style="color:#cc54d6"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/WeatherAPP.PNG" width=45%  height= auto; alt="Code of Square that Moves">
-                        <div class="layer" id="weatherapp" onclick="Weatherappclick()">
-                            <h3>Weather App</h3>
-                            <p>This was my first time using an API. HTML, CSS, JS </p>
-                            <a href="https://github.com/Slicepop/WeatherSite" target="_blank"><i id="weather" class="fa-brands fa-github fa-xl"style="color:#cc54d6"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Contact Me-->
-        
-        <div id="contact">
-            <div class="container">
-                <h1 class="sub-title">Contact Me</h1>
-                <div class="contact-content">
-                    <div class="contact-left">
-                        <div class="containerS">
-                            <div class="social-icons">
-                                <ul class="Socials">
-                                    <li><a href="https://github.com/Slicepop" target="_blank"><i class="fa-brands fa-github fa-2x"style="color: #cc54d6"></i>  Github</a></li>
-                                    <li><br></li>
-                                    <li><a href="mailto:kaden.seeger@gmail.com"><i class="fa-solid fa-envelope fa-2x" style="color: #cc54d6;"></i>  Email</a></li>
-                                    <li><br></li>
-                                    <li> <a href="https://www.linkedin.com/in/kaden-seeger-232a8a259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG4w2JmYfSrqZ%2FaTYpSmTpA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #cc54d6;"></i>  Linkedin</a></li>
-                                    <li><br></li>
-                                    <li><a href="images/Kaden-Seeger-Resume.pdf" download target="_blank"><i class="fa-solid fa-download fa-2x" style="color: #cc54d6;"></i>  Resume</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-right">
-                        <form name = "submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="text" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit"class = "btn btn2">Submit</button>
-                            <span id="msg"></span>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    
 
-
-
- <script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-    function openTab(tabName){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function openTab(tabName) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabName).classList.add("active-tab")
-    }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
 
-     function Weatherappclick(){
-        const githubiconWeather = document.getElementById("weather")
-        if (event.target == (githubiconWeather)) {
-            
-        }else{
-            window.open("https://slicepop.github.io/WeatherSite/", '_blank');
+      function Weatherappclick() {
+        const githubiconWeather = document.getElementById("weather");
+        if (event.target == githubiconWeather) {
+        } else {
+          window.open("https://slicepop.github.io/WeatherSite/", "_blank");
         }
-        
-    }
+      }
+      function HandleTodoClick() {
+        const githubToDo = document.getElementById("todo");
+        if (event.target == githubToDo) {
+        } else {
+          window.open("https://slicepop.github.io/ToDo/", "_blank");
+        }
+      }
 
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
         sidemenu.style.right = "0px";
-    }
-    function closemenu(){
+      }
+      function closemenu() {
         sidemenu.style.right = "-200px";
-        
-    }
+      }
 
+      const toggleButton = document.querySelector(
+        '.switch input[type="checkbox"]'
+      );
+      const codeFlexElements = document.querySelectorAll(".codeFlex");
 
-
-
-
-
-    const toggleButton = document.querySelector('.switch input[type="checkbox"]');
-    const codeFlexElements = document.querySelectorAll('.codeFlex');
-
-    var flipflop = 0;
-    const codetext = document.getElementsByClassName('codeDescription');
-    function setOpacity(){
-        if(flipflop == 1){
-            flipflop = 0;
-            for (p of codetext){
-                p.style.opacity = 0;
-
-            }
-            
-        }else if (flipflop == 0){
-            flipflop = 1;
-            for (p of codetext){
-                p.style.opacity = 1;
-
-            }
-
+      var flipflop = 0;
+      const codetext = document.getElementsByClassName("codeDescription");
+      function setOpacity() {
+        if (flipflop == 1) {
+          flipflop = 0;
+          for (p of codetext) {
+            p.style.opacity = 0;
+          }
+        } else if (flipflop == 0) {
+          flipflop = 1;
+          for (p of codetext) {
+            p.style.opacity = 1;
+          }
         }
+      }
 
-    }
- 
-    codeFlexElements.forEach((element) => {
-        element.addEventListener('mouseenter', handleMouseEnter);
-        element.addEventListener('mouseleave', handleMouseLeave);
-    });
+      codeFlexElements.forEach((element) => {
+        element.addEventListener("mouseenter", handleMouseEnter);
+        element.addEventListener("mouseleave", handleMouseLeave);
+      });
 
-
-// Function to handle mouse enter event
-    function handleMouseEnter(event) {
+      // Function to handle mouse enter event
+      function handleMouseEnter(event) {
         const element = event.currentTarget;
 
         // Check if the toggle button is off
         if (!flipflop) {
-            element.querySelector('p').style.opacity = 1; 
+          element.querySelector("p").style.opacity = 1;
         }
-    }
+      }
 
-// Function to handle mouse leave event
-    function handleMouseLeave(event) {
+      // Function to handle mouse leave event
+      function handleMouseLeave(event) {
         const element = event.currentTarget;
 
         // Check if the toggle button is off
         if (flipflop == 0) {
-            element.querySelector('p').style.opacity = 0;
+          element.querySelector("p").style.opacity = 0;
         }
-    }
+      }
 
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby265LtsHJIqAg71MaEDgUW1ZgxaURW4vYKr9eNzd2-uYcwPhC1cFREixy5FIPdauwy/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-
-
-
-
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby265LtsHJIqAg71MaEDgUW1ZgxaURW4vYKr9eNzd2-uYcwPhC1cFREixy5FIPdauwy/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent Successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => msg.innerHTML = "Error!")
-    })
-  </script>
-</body>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => (msg.innerHTML = "Error!"));
+      });
+    </script>
+  </body>
 </html>
