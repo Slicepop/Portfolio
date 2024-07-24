@@ -148,7 +148,7 @@
                 <h1 class="sub-title">My Work</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="images/Horror_Game.png" width= 45%  height= auto; alt="Picture of Crosstown">
+                        <img src="images/Horror_Game.png" width= 45%  height= auto; alt="Code for my Horror Game">
                         <div class="layer">
                             <h3>OSOF</h3>
                             <p>This is a horror game developed in Unreal Engine 4 that I made with a friend.</p>
@@ -171,6 +171,15 @@
                             <a href="https://github.com/Slicepop/WeatherSite" target="_blank"><i id="weather" class="fa-brands fa-github fa-xl"style="color:#cc54d6"></i></a>
                         </div>
                     </div>
+                    <div class="work">
+                        <img src="images/StratArcadeCode.PNG" width=45%  height= auto; alt="Code of Square that Moves">
+                        <div class="layer" id="StratagemHero" onclick="HD2Click()">
+                            <h3>Stratagem Arcade</h3>
+                            <p>This is a game I designed off of the minigame "Stratagem Hero" minigame located in Helldivers 2</p>
+                            <a href="https://github.com/Slicepop/HD2_StratagemArcade" target="_blank"><i id="strat" class="fa-brands fa-github fa-xl"style="color:#cc54d6"></i></a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -191,7 +200,7 @@
                                     <li><br></li>
                                     <li> <a href="https://www.linkedin.com/in/kaden-seeger-232a8a259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG4w2JmYfSrqZ%2FaTYpSmTpA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #cc54d6;"></i>  Linkedin</a></li>
                                     <li><br></li>
-                                    <li><a href="images/Kaden-Seeger-Resume.pdf" download target="_blank"><i class="fa-solid fa-download fa-2x" style="color: #cc54d6;"></i>  Resume</a></li>
+                                    <li><a href="images/Kaden-Seeger - Resume.pdf" download target="_blank"><i class="fa-solid fa-download fa-2x" style="color: #cc54d6;"></i>  Resume</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -229,6 +238,16 @@
  </script>
 
  <script>
+    function HD2Click(){
+        const githubiconHD = document.getElementById("strat")
+        if (event.target == (githubiconHD)) {
+            
+        }else{
+            window.open("https://slicepop.github.io/HD2_StratagemArcade/src/", '_blank');
+        }
+        
+    }
+
      function Weatherappclick(){
         const githubiconWeather = document.getElementById("weather")
         if (event.target == (githubiconWeather)) {
