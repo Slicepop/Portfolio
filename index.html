@@ -172,7 +172,15 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/StratArcadeCode.PNG" width=45%  height= auto; alt="Code of Square that Moves">
+                        <img src="images/ToDoCode.PNG" width=45%  height= auto; alt="Code of To Do App">
+                        <div class="layer" id="ToDoLayer" onclick="todoClick()">
+                            <h3>TaskMe</h3>
+                            <p>This is a todo list app I created in React</p>
+                            <a href="https://github.com/Slicepop/ToDo" target="_blank"><i id="ToDo" class="fa-brands fa-github fa-xl"style="color:#cc54d6"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/StratArcadeCode.PNG" width=45%  height= auto; alt="Code of Stratagem Hero">
                         <div class="layer" id="StratagemHero" onclick="HD2Click()">
                             <h3>Stratagem Arcade</h3>
                             <p>This is a game I designed off of the minigame "Stratagem Hero" minigame located in Helldivers 2</p>
@@ -244,6 +252,14 @@
             
         }else{
             window.open("https://slicepop.github.io/HD2_StratagemArcade/src/", '_blank');
+        }
+        
+    }function todoClick(){
+        const githubiconTODO = document.getElementById("ToDo")
+        if (event.target == (githubiconTODO)) {
+            
+        }else{
+            window.open("https://slicepop.github.io/ToDo/", '_blank');
         }
         
     }
