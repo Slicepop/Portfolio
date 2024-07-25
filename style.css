@@ -414,7 +414,10 @@ nav ul li a:hover::after {
   cursor: pointer;
 }
 
-.layer#todoarea {
+.layer#ToDoLayer {
+  cursor: pointer;
+}
+.layer#StratagemHero {
   cursor: pointer;
 }
 
