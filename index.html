@@ -280,7 +280,7 @@
                 src="images/Horror_Game.png"
                 width="45%"
                 height="auto;"
-                alt="Picture of Crosstown"
+                alt="Code for my Horror Game"
               />
               <div class="layer">
                 <h3>OSOF</h3>
@@ -300,20 +300,22 @@
             </div>
             <div class="work">
               <img
-                src="images/TaskMe.PNG"
+                src="images/Code.PNG"
                 width="45%"
                 height="auto;"
-                alt="TaksME code image"
+                alt="e-portfolio code image"
               />
-              <div class="layer" id="todoarea" onclick="HandleTodoClick()">
-                <h3>TaskMe</h3>
+              <div class="layer">
+                <h3>This Website</h3>
                 <p>
-                  This is my first application utilizing the React JavaScript
-                  framework.
+                  This website was a very big learning experience for me as it
+                  is my first website I have created and published.
                 </p>
-                <a href="https://github.com/Slicepop/ToDo" target="_blank"
+                <a
+                  href="https://github.com/Slicepop/Portfolio"
+                  target="_blank"
+                  class="youtubeIcon"
                   ><i
-                    id="todo"
                     class="fa-brands fa-github fa-xl"
                     style="color: #cc54d6"
                   ></i
@@ -335,6 +337,49 @@
                   target="_blank"
                   ><i
                     id="weather"
+                    class="fa-brands fa-github fa-xl"
+                    style="color: #cc54d6"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="images/ToDoCode.PNG"
+                width="45%"
+                height="auto;"
+                alt="Code of To Do App"
+              />
+              <div class="layer" id="ToDoLayer" onclick="todoClick()">
+                <h3>TaskMe</h3>
+                <p>This is a todo list app I created in React</p>
+                <a href="https://github.com/Slicepop/ToDo" target="_blank"
+                  ><i
+                    id="ToDo"
+                    class="fa-brands fa-github fa-xl"
+                    style="color: #cc54d6"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="images/StratArcadeCode.PNG"
+                width="45%"
+                height="auto;"
+                alt="Code of Stratagem Hero"
+              />
+              <div class="layer" id="StratagemHero" onclick="HD2Click()">
+                <h3>Stratagem Arcade</h3>
+                <p>
+                  This is a game I designed off of the minigame "Stratagem Hero"
+                  minigame located in Helldivers 2
+                </p>
+                <a
+                  href="https://github.com/Slicepop/HD2_StratagemArcade"
+                  target="_blank"
+                  ><i
+                    id="strat"
                     class="fa-brands fa-github fa-xl"
                     style="color: #cc54d6"
                   ></i
@@ -452,9 +497,19 @@
           window.open("https://slicepop.github.io/WeatherSite/", "_blank");
         }
       }
-      function HandleTodoClick() {
-        const githubToDo = document.getElementById("todo");
-        if (event.target == githubToDo) {
+      function HD2Click() {
+        const githubiconHD = document.getElementById("strat");
+        if (event.target == githubiconHD) {
+        } else {
+          window.open(
+            "https://slicepop.github.io/HD2_StratagemArcade/src/",
+            "_blank"
+          );
+        }
+      }
+      function todoClick() {
+        const githubiconTODO = document.getElementById("ToDo");
+        if (event.target == githubiconTODO) {
         } else {
           window.open("https://slicepop.github.io/ToDo/", "_blank");
         }
