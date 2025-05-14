@@ -1,306 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kaden's Eportfolio</title>
-    <link rel="shortcut icon" type="image/png" href="Logo.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/99edd4be2a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-        <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/Logo.png" class="Logo" alt="SlicepopLogo">
-                <ul id="sidemenu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i id= "fas" class="fa-solid fa-xmark fa-2x" style="color: #fff;" onclick = "closemenu()" ></i>
-                </ul>
-                <i id= "fas"class="fa-solid fa-bars fa-2x" style="color: #fff;" onclick = "openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>IT Team Assistant / SWE Major</p>
-                <h1>Hello, my name is <span>Kaden</span></h1>
-                <h3 class="myTitle">Software Developer</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kaden Seeger | Software Developer</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="Styles.css" />
+    <script
+      src="https://kit.fontawesome.com/99edd4be2a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Kaden Seeger</div>
+          <ul>
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" aria-label="Introduction">
+      <div class="container">
+        <h1>Hello, I'm Kaden</h1>
+        <p>
+          Junior Software Engineer passionate about building innovative
+          solutions.
+        </p>
+        <a href="#projects" class="btn" aria-label="View my projects"
+          >View Projects</a
+        >
+      </div>
+    </section>
+
+    <section id="about" aria-label="About Me">
+      <div class="container content">
+        <h2>About Me</h2>
+        <p>
+          I'm a driven Software Engineer pursuing my B.S. in Software
+          Engineering at Western Governors University with a projected completion in October, 2025. I enjoy solving technical
+          challenges and bringing ideas to life through clean, maintainable
+          code. My background spans software development, IT support, and cloud
+          infrastructure, with hands-on experience in full-stack technologies
+          and agile workflows.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" aria-label="Skills">
+      <div class="skills-grid" role="list">
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fab fa-js-square" aria-hidden="true"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fab fa-java" aria-hidden="true"></i>
+          <p>Java & Spring</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fab fa-python" aria-hidden="true"></i>
+          <p>Python</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fas fa-code" aria-hidden="true"></i>
+          <p>C++</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fab fa-angular" aria-hidden="true"></i>
+          <p>Angular</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fab fa-react" aria-hidden="true"></i>
+          <p>React</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fas fa-database" aria-hidden="true"></i>
+          <p>SQL & Databases</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fab fa-aws" aria-hidden="true"></i>
+          <p>AWS Cloud</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fas fa-cogs" aria-hidden="true"></i>
+          <p>CI/CD</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fab fa-git-alt" aria-hidden="true"></i>
+          <p>Git & Version Control</p>
+        </div>
+        <div class="skill" role="listitem" tabindex="0">
+          <i class="fas fa-users" aria-hidden="true"></i>
+          <p>Agile</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-label="Projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
+              alt="Screenshot of Service Desk Extension project"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>Service Desk Extension</h3>
+              <p>
+                Custom browser extension to enhance internal ticketing system
+                efficiency using JavaScript and Chrome APIs.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Slicepop/ServiceDeskExtension_Refactor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub repository for Service Desk Extension"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
             </div>
-        </div>
-        <div class="arrowdown">
-            <a href="#about" class="fa-solid fa-arrow-down"></a>
-            
-        </div>
-        <!--About Section-->
-        
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <h1 class="programmingSkillsTitle">Programming Skills</h>
-                        <div class="codeImages">
-                            <div class="codeFlex" id="csharp">
-                                <img class = 'codeLogo' src="images/c.png" alt="">                        
-                                <p>Learned to make Windows applications in a college class</p>
-                            </div>
-                            <div class="codeFlex" id="cpp">
-                                <img class = 'codeLogo' src="images/cpp.png" alt="">
-                                <p>Earned C++ entry-level certification</p>
-                            </div>
-                            <div id = 'jsIMG'class="codeFlex" id="java">
-                                <img class = 'codeLogo' src="images/java.png" alt="">
-                                <p>Learned to make mobile applications notably a mobile game</p>
-
-                            </div>
-                            <div class="codeFlex" id="python">
-                                <img  class = 'codeLogo' src="images/python.png" alt="">
-                                <p>Used to create small programs for small projects</p>
-
-                            </div>
-                            <div class="codeFlex" id="js">
-                                <img class = 'codeLogo' src="images/js.png" alt="">
-                                <p>1 year of experience using JS</p>
-                            </div>
-                            <div class="codeFlex" id="html">
-                                <img class = 'codeLogo' src="images/html.png" alt="">
-                                <p>2 years of experience using HTML</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p class="AboutParagraph">
-                            &nbsp; &nbsp; &nbsp; &nbsp;Hi I'm Kaden, and I've been immersed in the world of IT at Western Michigan University School of Medicine for the past year. Throughout my employment, I've successfully managed the deployment of over 250 machines, showcasing my expertise in system administration.
-                            As a certified programmer, I'm thrilled to embark on my journey studying computer science at Western Governors University. My passion for the field of computer science has been cultivated over the course of six years, during which I've explored various aspects, ranging from technical support to computer programming.
-                            In my pursuit of excellence, I embrace the philosophy of being a lifelong learner.
-                            <br>
-                            &nbsp; &nbsp; &nbsp; &nbsp;The ever-evolving nature of technology demands that I stay updated with the latest best practices and emerging technologies. This commitment to continuous growth enables me to contribute effectively within any team environment.
-                            My skill set encompasses a diverse range of programming languages, including HTML, CSS, JavaScript, C#, Java, Python, and C++. This versatility allows me to adapt to different projects and challenges, ensuring that I can deliver quality results.
-                            Above all, my greatest asset in any team setting is my unwavering determination to learn anything required to accomplish the task at hand. I thrive on expanding my knowledge and skill set, eagerly embracing new opportunities for personal and professional growth.
-                            Feel free to explore my e-portfolio and discover more about my journey in the world of IT and computer science!
-                        </p>
-
-                            <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="openTab('experience')">Experience</p>
-                            <p class="tab-links" onclick="openTab('education')">Education</p>
-                        </div>
-                        
-                        <div class="tab-contents active-tab" id="experience">
-                            <ul><li><span>UE5</span><br>Developed a Video game with a group</li></ul>
-                            <ul><li><span>WMed</span><br>Works in the IT department</li></ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul><li><span>2022</span><br>Diploma from Gull Lake Highschool</li></ul>
-                            <ul><li><span>2023</span><br>AA in General Studies from Kalamazoo Valley Community College</li></ul>
-                        </div>
-                    </div>
-                </div>
+          </article>
+          <article class="project-card" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
+              alt="Screenshot of Weather App project"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>Weather App</h3>
+              <p>
+                First API project fetching weather data with HTML, CSS, and
+                JavaScript.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Slicepop/WeatherSite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub repository for Weather App"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
             </div>
-        </div>
-        
-        <!--Services-->
-        
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-laptop-code fa-xl"style="color: #cc54d6;"></i>                        
-                        <h2>C++</h2>
-                        <p><br>During my junior year of high school, I achieved a significant milestone by obtaining the C++ Certified Entry Level certification (CPE) from the CPP Institute. This certification validates my proficiency in various fundamental aspects of C++ programming, including C++ syntax, literals and operators, flow control, functions, vectors and pointers, string and string processing, as well as structures.
-                            Driven by my passion for continuous learning, I have since gone beyond the entry level and dedicated myself to studying for the Associate level of the same program. This advanced level of certification allows me to delve deeper into the intricacies of C++ programming, expanding my knowledge and honing my skills even further.
-                            By pursuing these certifications and undertaking rigorous studies, I have fortified my foundation in C++ programming, empowering me to tackle complex coding challenges with confidence and precision.
-                        </p>
-                        
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-gamepad fa-xl" style="color: #cc54d6;"></i>   
-                        <h2>Video Game Design</h2>
-                        <p><br>
-                            I have had the privilege of collaborating with a team to develop two impressive video games. The first game, OSOF, is a captivating horror experience where players must navigate a maze, discover hidden keys, and outsmart a relentless monster to escape. This project successfully captures the suspense and thrill of survival horror, providing players with an immersive and engaging gameplay.
-                            The second project was an ambitious top-down game intended to be showcased to a contact at Riot Games, a prominent name in the gaming industry. Unfortunately, the team disbanded before we could finalize the game or present it to our intended audience. While it was disappointing, this experience taught me valuable lessons about teamwork, project management, and the unpredictable nature of the industry.
-                            Both game development experiences have significantly contributed to my growth as a developer. They have sharpened my skills in game design, programming, and collaborative problem-solving. Moreover, these experiences have further ignited my passion for creating captivating and innovative gaming experiences.
-                        </p>
-                        
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-window-maximize fa-xl" style="color: #cc54d6;"></i>
-                        <h2>Web Development</h2>
-                        <p><br>
-                            I created this website, leveraging the knowledge and skills I gained from my introductory web development class at KVCC. During the course, we focused on the fundamentals of web development, including HTML and CSS. Additionally, I had the chance to apply some JavaScript concepts in a project.
-                            Motivated by my passion for web development, I embarked on a journey of self-improvement and exploration. I sought out additional resources, and this website is the result of my efforts to expand my knowledge and skills in web development.
-                            Through the process of designing and building this website, I have gained valuable hands-on experience. I have further honed my understanding of HTML, CSS, and JavaScript, while also exploring more advanced concepts and techniques. This practical application has allowed me to solidify my foundational knowledge and gain confidence in my abilities as a web developer.
-                            I take pride in the growth I have achieved through this personal project, and I am excited to continue pushing my boundaries, continually learning and improving as I navigate the ever-evolving world of web development.
-                            </p>
-                        
-                    </div>
-                </div>
+          </article>
+          <article class="project-card" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+              alt="Screenshot of TaskMe ToDo App project"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3>TaskMe ToDo App</h3>
+              <p>
+                React-based todo list app to manage daily tasks efficiently.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Slicepop/ToDo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub repository for TaskMe ToDo App"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
             </div>
-        
+          </article>
         </div>
+      </div>
+    </section>
 
-        <!--Portfolio-->
-        
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/Horror_Game.png" width= 45%  height= auto; alt="Code for my Horror Game">
-                        <div class="layer">
-                            <h3>OSOF</h3>
-                            <p>This is a horror game developed in Unreal Engine 4 that I made with a friend.</p>
-                            <a href="https://github.com/ErrorCodeGameDevs/HorrorGame/tree/Development" target="_blank"><i class="fa-brands fa-github fa-xl "style="color:#cc54d6"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/Code.PNG" width=45%  height= auto; alt="e-portfolio code image">
-                        <div class="layer">
-                            <h3>This Website</h3>
-                            <p>This website was a very big learning experience for me as it is my first website I have created and published.</p>
-                            <a href="https://github.com/Slicepop/Portfolio" target="_blank" class="youtubeIcon"><i class="fa-brands fa-github fa-xl "style="color:#cc54d6"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/WeatherAPP.PNG" width=45%  height= auto; alt="Code of Square that Moves">
-                        <div class="layer" id="weatherapp" onclick="Weatherappclick()">
-                            <h3>Weather App</h3>
-                            <p>This was my first time using an API. HTML, CSS, JS </p>
-                            <a href="https://github.com/Slicepop/WeatherSite" target="_blank"><i id="weather" class="fa-brands fa-github fa-xl"style="color:#cc54d6"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/ToDoCode.PNG" width=45%  height= auto; alt="Code of To Do App">
-                        <div class="layer" id="ToDoLayer" onclick="todoClick()">
-                            <h3>TaskMe</h3>
-                            <p>This is a todo list app I created in React</p>
-                            <a href="https://github.com/Slicepop/ToDo" target="_blank"><i id="ToDo" class="fa-brands fa-github fa-xl"style="color:#cc54d6"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/StratArcadeCode.PNG" width=45%  height= auto; alt="Code of Stratagem Hero">
-                        <div class="layer" id="StratagemHero" onclick="HD2Click()">
-                            <h3>Stratagem Arcade</h3>
-                            <p>This is a game I designed off of the minigame "Stratagem Hero" minigame located in Helldivers 2</p>
-                            <a href="https://github.com/Slicepop/HD2_StratagemArcade" target="_blank"><i id="strat" class="fa-brands fa-github fa-xl"style="color:#cc54d6"></i></a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+    <section id="certifications" aria-label="Certifications">
+      <div class="container content">
+        <h2>Certifications</h2>
+        <ul>
+          <li>
+            <i class="fas fa-cog"></i> ITIL® Foundation
+            <span style="opacity: 0.8">(in progress)</span>
+          </li>
+          <li>
+            <i class="fas fa-code"></i>
+            <span>Western Governors University, Front-End Developer</span>
+          </li>
+          <li id="PROJECT">
+            <i class="fas fa-project-diagram"></i>
+            <span>CompTIA, CompTIA Project+</span>
+          </li>
+          <li id="AWS">
+            <i class="fab fa-aws"></i>
+            <span>AWS, AWS Certified Cloud Practitioner</span>
+          </li>
+          <li>
+            <i class="fas fa-desktop"></i>
+            <span>TestOut, PC Pro Certification</span>
+          </li>
+
+          <li>
+            <i class="fas fa-laptop-code"></i>
+            <span>Cpp Institute, C++ Entry-Level Programmer</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" aria-label="Contact">
+      <div class="container contact-container">
+        <h2>Contact Me</h2>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xrbqrgwd"
+          method="POST"
+          aria-label="Contact form"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            autocomplete="name"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            autocomplete="email"
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="thank-you" style="display: none; margin-top: 1rem">
+          <p>Thanks for reaching out! I’ll respond shortly.</p>
         </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #aaa">
+          Or reach me via
+          <a href="mailto:kaden.seeger@gmail.com">kaden.seeger@gmail.com</a>
+        </p>
+      </div>
+    </section>
 
-        <!--Contact Me-->
-        
-        <div id="contact">
-            <div class="container">
-                <h1 class="sub-title">Contact Me</h1>
-                <div class="contact-content">
-                    <div class="contact-left">
-                        <div class="containerS">
-                            <div class="social-icons">
-                                <ul class="Socials">
-                                    <li><a href="https://github.com/Slicepop" target="_blank"><i class="fa-brands fa-github fa-2x"style="color: #cc54d6"></i>  Github</a></li>
-                                    <li><br></li>
-                                    <li><a href="mailto:kaden.seeger@gmail.com"><i class="fa-solid fa-envelope fa-2x" style="color: #cc54d6;"></i>  Email</a></li>
-                                    <li><br></li>
-                                    <li> <a href="https://www.linkedin.com/in/kaden-seeger-232a8a259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG4w2JmYfSrqZ%2FaTYpSmTpA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #cc54d6;"></i>  Linkedin</a></li>
-                                    <li><br></li>
-                                    <li><a href="images/Kaden-Seeger - Resume.pdf" download target="_blank"><i class="fa-solid fa-download fa-2x" style="color: #cc54d6;"></i>  Resume</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-right">
-                        <form name = "submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="text" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit"class = "btn btn2">Submit</button>
-                            <span id="msg"></span>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+    <footer>
+      <p>© 2025 Kaden Seeger. All rights reserved.</p>
+    </footer>
 
+    <script>
+      const AWS = document.querySelector("#AWS");
+      AWS.onclick = function () {
+        window.open(
+          "https://cp.certmetrics.com/amazon/en/public/verify/credential/535e3cf4bfdb49fb930f3fca69de9cd2",
+          "_blank"
+        );
+      };
+      const PROJECT = document.querySelector("#PROJECT");
+      PROJECT.onclick = function () {
+        window.open(
+          "https://www.credly.com/badges/2d413a63-b9dc-457b-a78b-12552d970393/public_url",
+          "_blank"
+        );
+      };
 
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll("nav ul li a");
 
- <script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-    function openTab(tabName){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
+        const observerOptions = {
+          root: null,
+          rootMargin: "-50% 0px -50% 0px",
+          threshold: 0,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const id = entry.target.getAttribute("id");
+            const navLink = document.querySelector(
+              `nav ul li a[href="#${id}"]`
+            );
+            if (entry.isIntersecting) {
+              navLinks.forEach((link) => link.classList.remove("active"));
+              if (navLink) navLink.classList.add("active");
+            }
+          });
+        }, observerOptions);
+
+        sections.forEach((section) => observer.observe(section));
+      });
+
+      const form = document.getElementById("contact-form");
+      const thankYouMessage = document.getElementById("thank-you");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          form.reset();
+          form.style.display = "none";
+          thankYouMessage.style.display = "block";
+        } else {
+          alert("Oops! Something went wrong.");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabName).classList.add("active-tab")
-    }
- </script>
-
- <script>
-    function HD2Click(){
-        const githubiconHD = document.getElementById("strat")
-        if (event.target == (githubiconHD)) {
-            
-        }else{
-            window.open("https://slicepop.github.io/HD2_StratagemArcade/src/", '_blank');
-        }
-        
-    }function todoClick(){
-        const githubiconTODO = document.getElementById("ToDo")
-        if (event.target == (githubiconTODO)) {
-            
-        }else{
-            window.open("https://slicepop.github.io/ToDo/", '_blank');
-        }
-        
-    }
-
-     function Weatherappclick(){
-        const githubiconWeather = document.getElementById("weather")
-        if (event.target == (githubiconWeather)) {
-            
-        }else{
-            window.open("https://slicepop.github.io/WeatherSite/", '_blank');
-        }
-        
-    }
-
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0px";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-        
-    }
- </script>
- 
- <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby265LtsHJIqAg71MaEDgUW1ZgxaURW4vYKr9eNzd2-uYcwPhC1cFREixy5FIPdauwy/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent Successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => msg.innerHTML = "Error!")
-    })
-  </script>
-</body>
+      });
+    </script>
+  </body>
 </html>
