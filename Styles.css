@@ -459,3 +459,21 @@ html {
 #PROJECT {
   cursor: pointer;
 }
+.fa-file-download {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fa-file-download:hover {
+  color: #a78bfa;
+  transform: scale(1.1);
+}
+
+nav ul li a[download] {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #e0e0e0;
+}
